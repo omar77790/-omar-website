@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMAR | Personal Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #080d18;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            background: #0d1525;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            color: #00aaff;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00aaff;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            background: radial-gradient(circle, #102b4d, #080d18 70%);
+        }
+
+        .hero h1 {
+            font-size: 75px;
+            color: #00aaff;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            font-size: 27px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #aab7c8;
+            font-size: 17px;
+            max-width: 550px;
+            line-height: 1.9;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 35px;
+            background: #008cff;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #005fbd;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #00aaff;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        section p {
+            color: #c0cad8;
+            line-height: 2;
+            font-size: 17px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: #111d30;
+            padding: 35px 20px;
+            border: 1px solid #1b3555;
+            border-radius: 15px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #00aaff;
+        }
+
+        .card h3 {
+            color: #00aaff;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #0d1525;
+            padding: 30px;
+            text-align: center;
+            color: #8291a5;
+        }
+
+        footer span {
+            color: #00aaff;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav a {
+                margin: 0 5px;
+                font-size: 13px;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .hero h2 {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">OMAR.</div>
+
+    <nav>
+        <a href="#home">الرئيسية</a>
+        <a href="#about">من أنا</a>
+        <a href="#skills">اهتماماتي</a>
+        <a href="#contact">تواصل معي</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <h1>OMAR</h1>
+    <h2>مرحباً بك في عالمي الخاص</h2>
+
+    <p>
+        أنا عمر، أؤمن بأن الطموح لا حدود له،
+        وأسعى دائماً لتعلم أشياء جديدة
+        وصناعة مستقبلي بطريقتي الخاصة.
+    </p>
+
+    <a href="#about" class="btn">اكتشف المزيد</a>
+</div>
+
+<section id="about">
+    <h2>من أنا؟</h2>
+
+    <p>
+        أهلاً بك في موقعي الشخصي.
+        أنا عمر، أحب التقنية والبرمجة
+        واكتشاف العالم الرقمي.
+        هذا الموقع يمثل مساحتي الخاصة
+        لمشاركة أفكاري واهتماماتي ومشاريعي.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>اهتماماتي</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>💻 البرمجة</h3>
+            <p>عالم الأكواد والتطوير وصناعة المواقع.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 التكنولوجيا</h3>
+            <p>اكتشاف التقنيات الحديثة والعالم الرقمي.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 الطموح</h3>
+            <p>التعلم المستمر وتحقيق الأهداف.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>تواصل معي</h2>
+
+    <p>
+        يسعدني وجودك هنا!
+        يمكنك إضافة روابط حساباتك الاجتماعية في هذا القسم.
+    </p>
+
+    <a href="https://instagram.com/" class="btn">
+        Instagram
+    </a>
+</section>
+
+<footer>
+    <p>
+        جميع الحقوق محفوظة © 2026
+        <span>OMAR</span>
+    </p>
+</footer>
+
+</body>
+</html>
